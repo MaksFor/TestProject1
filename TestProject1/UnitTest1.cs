@@ -13,10 +13,10 @@ public class Tests
     [Test]
     public void Test1()
     {
-        for (int i = 0; i < 5; i++)
+        for (var i = 0; i < 5; i++)
         {
             IWebElement query = _driver.FindElement(By.Name("q"));
-            query.SendKeys("Hello, Selenium WebDriver!" + i);
+            query.SendKeys("Hello, Selenium WebDriver! " + i);
             query.Submit();
             Console.WriteLine(_driver.Title);
         }
