@@ -41,7 +41,7 @@
           "dependencies": {
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
-              "version": "[17.5.0-preview-20221003-04, )"
+              "version": "[17.5.0, )"
             },
             "NUnit": {
               "target": "Package",
@@ -51,23 +51,23 @@
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[3.5.0, )"
+              "version": "[3.6.1, )"
             },
             "NUnit3TestAdapter": {
               "target": "Package",
-              "version": "[4.3.1, )"
+              "version": "[4.4.2, )"
             },
             "Selenium.Support": {
               "target": "Package",
-              "version": "[4.7.0, )"
+              "version": "[4.8.1, )"
             },
             "Selenium.WebDriver": {
               "target": "Package",
-              "version": "[4.7.0, )"
+              "version": "[4.8.1, )"
             },
             "Selenium.WebDriver.ChromeDriver": {
               "target": "Package",
-              "version": "[107.0.5304.6200, )"
+              "version": "[111.0.5563.6400, )"
             },
             "coverlet.collector": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -92,7 +92,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.101/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.201/RuntimeIdentifierGraph.json"
         }
       }
     }

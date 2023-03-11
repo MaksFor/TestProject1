@@ -8,7 +8,7 @@
           "build/netstandard1.0/coverlet.collector.targets": {}
         }
       },
-      "Microsoft.CodeCoverage/17.5.0-preview-20221003-04": {
+      "Microsoft.CodeCoverage/17.5.0": {
         "type": "package",
         "compile": {
           "lib/netcoreapp3.1/Microsoft.VisualStudio.CodeCoverage.Shim.dll": {}
@@ -21,11 +21,11 @@
           "build/netstandard2.0/Microsoft.CodeCoverage.targets": {}
         }
       },
-      "Microsoft.NET.Test.Sdk/17.5.0-preview-20221003-04": {
+      "Microsoft.NET.Test.Sdk/17.5.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.CodeCoverage": "17.5.0-preview-20221003-04",
-          "Microsoft.TestPlatform.TestHost": "17.5.0-preview-20221003-04"
+          "Microsoft.CodeCoverage": "17.5.0",
+          "Microsoft.TestPlatform.TestHost": "17.5.0"
         },
         "compile": {
           "lib/netcoreapp3.1/_._": {}
@@ -34,8 +34,8 @@
           "lib/netcoreapp3.1/_._": {}
         },
         "build": {
-          "buildTransitive/netcoreapp3.1/Microsoft.NET.Test.Sdk.props": {},
-          "buildTransitive/netcoreapp3.1/Microsoft.NET.Test.Sdk.targets": {}
+          "build/netcoreapp3.1/Microsoft.NET.Test.Sdk.props": {},
+          "build/netcoreapp3.1/Microsoft.NET.Test.Sdk.targets": {}
         },
         "buildMultiTargeting": {
           "buildMultiTargeting/Microsoft.NET.Test.Sdk.props": {}
@@ -50,7 +50,7 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "Microsoft.TestPlatform.ObjectModel/17.5.0-preview-20221003-04": {
+      "Microsoft.TestPlatform.ObjectModel/17.5.0": {
         "type": "package",
         "dependencies": {
           "NuGet.Frameworks": "5.11.0",
@@ -147,10 +147,10 @@
           }
         }
       },
-      "Microsoft.TestPlatform.TestHost/17.5.0-preview-20221003-04": {
+      "Microsoft.TestPlatform.TestHost/17.5.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.TestPlatform.ObjectModel": "17.5.0-preview-20221003-04",
+          "Microsoft.TestPlatform.ObjectModel": "17.5.0",
           "Newtonsoft.Json": "13.0.1"
         },
         "compile": {
@@ -360,19 +360,19 @@
           "build/NUnit.props": {}
         }
       },
-      "NUnit.Analyzers/3.5.0": {
+      "NUnit.Analyzers/3.6.1": {
         "type": "package"
       },
-      "NUnit3TestAdapter/4.3.1": {
+      "NUnit3TestAdapter/4.4.2": {
         "type": "package",
         "build": {
           "build/netcoreapp3.1/NUnit3TestAdapter.props": {}
         }
       },
-      "Selenium.Support/4.7.0": {
+      "Selenium.Support/4.8.1": {
         "type": "package",
         "dependencies": {
-          "Selenium.WebDriver": "4.7.0"
+          "Selenium.WebDriver": "4.8.1"
         },
         "compile": {
           "lib/net6.0/WebDriver.Support.dll": {}
@@ -381,7 +381,7 @@
           "lib/net6.0/WebDriver.Support.dll": {}
         }
       },
-      "Selenium.WebDriver/4.7.0": {
+      "Selenium.WebDriver/4.8.1": {
         "type": "package",
         "dependencies": {
           "Newtonsoft.Json": "13.0.1"
@@ -396,7 +396,7 @@
           "build/Selenium.WebDriver.targets": {}
         }
       },
-      "Selenium.WebDriver.ChromeDriver/107.0.5304.6200": {
+      "Selenium.WebDriver.ChromeDriver/111.0.5563.6400": {
         "type": "package",
         "build": {
           "build/Selenium.WebDriver.ChromeDriver.targets": {}
@@ -471,10 +471,10 @@
         "coverlet.collector.nuspec"
       ]
     },
-    "Microsoft.CodeCoverage/17.5.0-preview-20221003-04": {
-      "sha512": "3xgt5Lf/XcEPxk4aclgJIYwwmt8fcTFmKmxSBoAPoQ5U5liQcsncrHhCg9twligVqfYT2PptBevpQLAR8WuUAg==",
+    "Microsoft.CodeCoverage/17.5.0": {
+      "sha512": "6FQo0O6LKDqbCiIgVQhJAf810HSjFlOj7FunWaeOGDKxy8DAbpHzPk4SfBTXz9ytaaceuIIeR6hZgplt09m+ig==",
       "type": "package",
-      "path": "microsoft.codecoverage/17.5.0-preview-20221003-04",
+      "path": "microsoft.codecoverage/17.5.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -514,6 +514,7 @@
         "build/netstandard2.0/Microsoft.CodeCoverage.targets",
         "build/netstandard2.0/Microsoft.VisualStudio.TraceDataCollector.dll",
         "build/netstandard2.0/Mono.Cecil.Pdb.dll",
+        "build/netstandard2.0/Mono.Cecil.Rocks.dll",
         "build/netstandard2.0/Mono.Cecil.dll",
         "build/netstandard2.0/ThirdPartyNotices.txt",
         "build/netstandard2.0/cs/Microsoft.VisualStudio.TraceDataCollector.resources.dll",
@@ -531,30 +532,30 @@
         "build/netstandard2.0/zh-Hant/Microsoft.VisualStudio.TraceDataCollector.resources.dll",
         "lib/net462/Microsoft.VisualStudio.CodeCoverage.Shim.dll",
         "lib/netcoreapp3.1/Microsoft.VisualStudio.CodeCoverage.Shim.dll",
-        "microsoft.codecoverage.17.5.0-preview-20221003-04.nupkg.sha512",
+        "microsoft.codecoverage.17.5.0.nupkg.sha512",
         "microsoft.codecoverage.nuspec"
       ]
     },
-    "Microsoft.NET.Test.Sdk/17.5.0-preview-20221003-04": {
-      "sha512": "YpPrK2mVX9iMbXaq+uTl+sON2iis6bDyiuZnaw66LfAI6O3uBBstN6gjYlkNGfKxzIkA5XO7+UXPCCnXDQkbkA==",
+    "Microsoft.NET.Test.Sdk/17.5.0": {
+      "sha512": "IJ4eSPcsRbwbAZehh1M9KgejSy0u3d0wAdkJytfCh67zOaCl5U3ltruUEe15MqirdRqGmm/ngbjeaVeGapSZxg==",
       "type": "package",
-      "path": "microsoft.net.test.sdk/17.5.0-preview-20221003-04",
+      "path": "microsoft.net.test.sdk/17.5.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "LICENSE_NET.txt",
+        "build/net462/Microsoft.NET.Test.Sdk.props",
+        "build/net462/Microsoft.NET.Test.Sdk.targets",
+        "build/netcoreapp3.1/Microsoft.NET.Test.Sdk.Program.cs",
+        "build/netcoreapp3.1/Microsoft.NET.Test.Sdk.Program.fs",
+        "build/netcoreapp3.1/Microsoft.NET.Test.Sdk.Program.vb",
+        "build/netcoreapp3.1/Microsoft.NET.Test.Sdk.props",
+        "build/netcoreapp3.1/Microsoft.NET.Test.Sdk.targets",
         "buildMultiTargeting/Microsoft.NET.Test.Sdk.props",
-        "buildTransitive/net462/Microsoft.NET.Test.Sdk.props",
-        "buildTransitive/net462/Microsoft.NET.Test.Sdk.targets",
-        "buildTransitive/netcoreapp3.1/Microsoft.NET.Test.Sdk.Program.cs",
-        "buildTransitive/netcoreapp3.1/Microsoft.NET.Test.Sdk.Program.fs",
-        "buildTransitive/netcoreapp3.1/Microsoft.NET.Test.Sdk.Program.vb",
-        "buildTransitive/netcoreapp3.1/Microsoft.NET.Test.Sdk.props",
-        "buildTransitive/netcoreapp3.1/Microsoft.NET.Test.Sdk.targets",
         "lib/net462/_._",
         "lib/netcoreapp3.1/_._",
-        "microsoft.net.test.sdk.17.5.0-preview-20221003-04.nupkg.sha512",
+        "microsoft.net.test.sdk.17.5.0.nupkg.sha512",
         "microsoft.net.test.sdk.nuspec"
       ]
     },
@@ -573,10 +574,10 @@
         "runtime.json"
       ]
     },
-    "Microsoft.TestPlatform.ObjectModel/17.5.0-preview-20221003-04": {
-      "sha512": "Gou0FfdDd6MZMmh1m6AJF3KVIYHE+SxxDnv4Dksr0ZAh+TpRR48gN/W/x/qit1ePCzhiHE1wyXEiNpl1YtOJnA==",
+    "Microsoft.TestPlatform.ObjectModel/17.5.0": {
+      "sha512": "QwiBJcC/oEA1kojOaB0uPWOIo4i6BYuTBBYJVhUvmXkyYqZ2Ut/VZfgi+enf8LF8J4sjO98oRRFt39MiRorcIw==",
       "type": "package",
-      "path": "microsoft.testplatform.objectmodel/17.5.0-preview-20221003-04",
+      "path": "microsoft.testplatform.objectmodel/17.5.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -669,14 +670,14 @@
         "lib/netstandard2.0/zh-Hans/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
         "lib/netstandard2.0/zh-Hant/Microsoft.TestPlatform.CoreUtilities.resources.dll",
         "lib/netstandard2.0/zh-Hant/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "microsoft.testplatform.objectmodel.17.5.0-preview-20221003-04.nupkg.sha512",
+        "microsoft.testplatform.objectmodel.17.5.0.nupkg.sha512",
         "microsoft.testplatform.objectmodel.nuspec"
       ]
     },
-    "Microsoft.TestPlatform.TestHost/17.5.0-preview-20221003-04": {
-      "sha512": "p0tQUCn9UupTaVqFdFWDcDV82QiVRFMPuJ2/zxoEf6DtmeKDjZzB3AXkhTRM+eVkR1fMiW3TehhMh0T3TiUs9w==",
+    "Microsoft.TestPlatform.TestHost/17.5.0": {
+      "sha512": "X86aikwp9d4SDcBChwzQYZihTPGEtMdDk+9t64emAl7N0Tq+OmlLAoW+Rs+2FB2k6QdUicSlT4QLO2xABRokaw==",
       "type": "package",
-      "path": "microsoft.testplatform.testhost/17.5.0-preview-20221003-04",
+      "path": "microsoft.testplatform.testhost/17.5.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -739,7 +740,7 @@
         "lib/netcoreapp3.1/zh-Hant/Microsoft.TestPlatform.CommunicationUtilities.resources.dll",
         "lib/netcoreapp3.1/zh-Hant/Microsoft.TestPlatform.CrossPlatEngine.resources.dll",
         "lib/netcoreapp3.1/zh-Hant/Microsoft.VisualStudio.TestPlatform.Common.resources.dll",
-        "microsoft.testplatform.testhost.17.5.0-preview-20221003-04.nupkg.sha512",
+        "microsoft.testplatform.testhost.17.5.0.nupkg.sha512",
         "microsoft.testplatform.testhost.nuspec"
       ]
     },
@@ -942,10 +943,10 @@
         "nunit.nuspec"
       ]
     },
-    "NUnit.Analyzers/3.5.0": {
-      "sha512": "uvYCAqtZrY9RZc1ErVREvcYr828uy4RmTZYfMPN5FrahvJp/b2+QEgsJISzU3cbxLc9IBBlEOBa9d4t6ejFM2Q==",
+    "NUnit.Analyzers/3.6.1": {
+      "sha512": "RKP9tpKfl3DmRgUDGgh3XM3XzeLMrCXXMZm6vm1nMsObZ6vtQL1L9NrK7+oZh1jWearvNsbMis2+AIOY3NFmow==",
       "type": "package",
-      "path": "nunit.analyzers/3.5.0",
+      "path": "nunit.analyzers/3.6.1",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -954,26 +955,26 @@
         "docs/README.md",
         "images/nunit_256.png",
         "license.txt",
-        "nunit.analyzers.3.5.0.nupkg.sha512",
+        "nunit.analyzers.3.6.1.nupkg.sha512",
         "nunit.analyzers.nuspec",
         "tools/install.ps1",
         "tools/uninstall.ps1"
       ]
     },
-    "NUnit3TestAdapter/4.3.1": {
-      "sha512": "R+bGFtsUpLWywjT1nb3xMmoVa2AIw6ClIGC+XjW9lYE8hwJeos+NdR/mtg4RXbBphmC9epALrnUc6MM7mUG8+Q==",
+    "NUnit3TestAdapter/4.4.2": {
+      "sha512": "vA/iHYcR+LYw+pRWQugckC/zW2fXHaqMr2uA82NOBt8v4YK4wMJrQ7QC8XLc7PjetEZ96cPbBTWsDDtmQiRZTA==",
       "type": "package",
-      "path": "nunit3testadapter/4.3.1",
+      "path": "nunit3testadapter/4.4.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "build/net35/NUnit3.TestAdapter.dll",
-        "build/net35/NUnit3.TestAdapter.pdb",
-        "build/net35/NUnit3TestAdapter.props",
-        "build/net35/nunit.engine.api.dll",
-        "build/net35/nunit.engine.core.dll",
-        "build/net35/nunit.engine.dll",
-        "build/net35/testcentric.engine.metadata.dll",
+        "build/net462/NUnit3.TestAdapter.dll",
+        "build/net462/NUnit3.TestAdapter.pdb",
+        "build/net462/NUnit3TestAdapter.props",
+        "build/net462/nunit.engine.api.dll",
+        "build/net462/nunit.engine.core.dll",
+        "build/net462/nunit.engine.dll",
+        "build/net462/testcentric.engine.metadata.dll",
         "build/netcoreapp3.1/NUnit3.TestAdapter.dll",
         "build/netcoreapp3.1/NUnit3.TestAdapter.pdb",
         "build/netcoreapp3.1/NUnit3TestAdapter.props",
@@ -981,14 +982,16 @@
         "build/netcoreapp3.1/nunit.engine.core.dll",
         "build/netcoreapp3.1/nunit.engine.dll",
         "build/netcoreapp3.1/testcentric.engine.metadata.dll",
-        "nunit3testadapter.4.3.1.nupkg.sha512",
-        "nunit3testadapter.nuspec"
+        "docs/README.md",
+        "nunit3testadapter.4.4.2.nupkg.sha512",
+        "nunit3testadapter.nuspec",
+        "nunit_256.png"
       ]
     },
-    "Selenium.Support/4.7.0": {
-      "sha512": "Fy5AIybjkJhVwe2VY2JSYBQeEV0E+HfG11wmkrC1+ICBBWBkt4Ax/oKH+oQ3kTgFCjDY2wAM4LCvMLDxRXi+ig==",
+    "Selenium.Support/4.8.1": {
+      "sha512": "S7ZkZvCbg7UW8botSWJUBLBcPqumBH+cUJtwoTNWCw3Bhj/SBrxMG0q+CRBkrF2HW1btJXkOqzsiWAPAV0EVfA==",
       "type": "package",
-      "path": "selenium.support/4.7.0",
+      "path": "selenium.support/4.8.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1001,14 +1004,14 @@
         "lib/net6.0/WebDriver.Support.dll",
         "lib/netstandard2.0/WebDriver.Support.dll",
         "lib/netstandard2.1/WebDriver.Support.dll",
-        "selenium.support.4.7.0.nupkg.sha512",
+        "selenium.support.4.8.1.nupkg.sha512",
         "selenium.support.nuspec"
       ]
     },
-    "Selenium.WebDriver/4.7.0": {
-      "sha512": "WNGX6JxjBS5f79PQnrB4oO+5U83f8tZfND+rqX2YJVHPdv3xS/zZwljWqGu5UDhluo3kEuuT+DuGEZW8/+9fOA==",
+    "Selenium.WebDriver/4.8.1": {
+      "sha512": "h4H7pEyr41Xf+IgmhNqrbF3I24SV02x2G1INS82pycNltg1q15/qVV/aRKu/MbMFKtqy1mVoNEE/4/p7T/4Ngw==",
       "type": "package",
-      "path": "selenium.webdriver/4.7.0",
+      "path": "selenium.webdriver/4.8.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1025,14 +1028,14 @@
         "manager/linux/selenium-manager",
         "manager/macos/selenium-manager",
         "manager/windows/selenium-manager.exe",
-        "selenium.webdriver.4.7.0.nupkg.sha512",
+        "selenium.webdriver.4.8.1.nupkg.sha512",
         "selenium.webdriver.nuspec"
       ]
     },
-    "Selenium.WebDriver.ChromeDriver/107.0.5304.6200": {
-      "sha512": "0xkXvzwRXVbduG62Z7+vhM4a85x3mWlfGUSQn+4PdeVJdkkssVe4rV80J+WBEOfUJAjga7L6YydFkbd9ONJqxQ==",
+    "Selenium.WebDriver.ChromeDriver/111.0.5563.6400": {
+      "sha512": "qLM1wbhtfyX/7cdqCHsuos8jKG67ojsOgKLvoHReRYCBPVbbSl/niedtAVzOLpnEn9sk9C7FH6jHc/QQIR0G4w==",
       "type": "package",
-      "path": "selenium.webdriver.chromedriver/107.0.5304.6200",
+      "path": "selenium.webdriver.chromedriver/111.0.5563.6400",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1044,7 +1047,7 @@
         "driver/mac64arm/chromedriver",
         "driver/win32/chromedriver.exe",
         "nupkg-icon.png",
-        "selenium.webdriver.chromedriver.107.0.5304.6200.nupkg.sha512",
+        "selenium.webdriver.chromedriver.111.0.5563.6400.nupkg.sha512",
         "selenium.webdriver.chromedriver.nuspec"
       ]
     },
@@ -1072,13 +1075,13 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "Microsoft.NET.Test.Sdk >= 17.5.0-preview-20221003-04",
+      "Microsoft.NET.Test.Sdk >= 17.5.0",
       "NUnit >= 3.13.3",
-      "NUnit.Analyzers >= 3.5.0",
-      "NUnit3TestAdapter >= 4.3.1",
-      "Selenium.Support >= 4.7.0",
-      "Selenium.WebDriver >= 4.7.0",
-      "Selenium.WebDriver.ChromeDriver >= 107.0.5304.6200",
+      "NUnit.Analyzers >= 3.6.1",
+      "NUnit3TestAdapter >= 4.4.2",
+      "Selenium.Support >= 4.8.1",
+      "Selenium.WebDriver >= 4.8.1",
+      "Selenium.WebDriver.ChromeDriver >= 111.0.5563.6400",
       "coverlet.collector >= 3.2.0"
     ]
   },
@@ -1122,7 +1125,7 @@
         "dependencies": {
           "Microsoft.NET.Test.Sdk": {
             "target": "Package",
-            "version": "[17.5.0-preview-20221003-04, )"
+            "version": "[17.5.0, )"
           },
           "NUnit": {
             "target": "Package",
@@ -1132,23 +1135,23 @@
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",
             "target": "Package",
-            "version": "[3.5.0, )"
+            "version": "[3.6.1, )"
           },
           "NUnit3TestAdapter": {
             "target": "Package",
-            "version": "[4.3.1, )"
+            "version": "[4.4.2, )"
           },
           "Selenium.Support": {
             "target": "Package",
-            "version": "[4.7.0, )"
+            "version": "[4.8.1, )"
           },
           "Selenium.WebDriver": {
             "target": "Package",
-            "version": "[4.7.0, )"
+            "version": "[4.8.1, )"
           },
           "Selenium.WebDriver.ChromeDriver": {
             "target": "Package",
-            "version": "[107.0.5304.6200, )"
+            "version": "[111.0.5563.6400, )"
           },
           "coverlet.collector": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -1173,7 +1176,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.101/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.201/RuntimeIdentifierGraph.json"
       }
     }
   }
