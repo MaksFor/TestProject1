@@ -2,8 +2,14 @@ namespace TestProject1;
 
 public class Tests
 {
-    private readonly WebDriver _driver = new ChromeDriver();
-    
+    private static readonly ChromeDriver chromeDriver;
+    private readonly WebDriver _driver = chromeDriver;
+
+    static Tests()
+    {
+        chromeDriver = new ChromeDriver();
+    }
+
     [SetUp]
     public void Setup()
     {
