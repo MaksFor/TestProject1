@@ -1,13 +1,15 @@
+using OpenQA.Selenium.Firefox;
+
 namespace TestProject1;
 
 public class Tests
 {
-    private static readonly ChromeDriver chromeDriver;
-    private readonly WebDriver _driver = chromeDriver;
+    private static readonly FirefoxDriver FirefoxDriver;
+    private readonly WebDriver _driver = FirefoxDriver;
 
     static Tests()
     {
-        chromeDriver = new ChromeDriver();
+        FirefoxDriver = new FirefoxDriver();
     }
 
     [SetUp]
